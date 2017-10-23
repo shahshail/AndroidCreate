@@ -1,5 +1,13 @@
 [
     {
+        "merged": "/Users/shailshah/Documents/Projects/AndroidCreator/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
+        "source": "/Users/shailshah/Documents/Projects/AndroidCreator/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/shailshah/Documents/Projects/AndroidCreator/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher_round.png",
+        "source": "/Users/shailshah/Documents/Projects/AndroidCreator/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
         "merged": "/Users/shailshah/Documents/Udacity_Advanced_android/TFragments.07-Solution-TwoPaneUI/AndroidCreator/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
         "source": "/Users/shailshah/Documents/Udacity_Advanced_android/TFragments.07-Solution-TwoPaneUI/AndroidCreator/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     },
