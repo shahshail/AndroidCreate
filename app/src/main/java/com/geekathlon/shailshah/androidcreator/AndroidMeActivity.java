@@ -8,24 +8,37 @@ import com.geekathlon.shailshah.androidcreator.data.AndroidImageAssets;
 
 public class AndroidMeActivity extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_android_me);
 
-        if (savedInstanceState == null)
-        {
+        // Only create new fragments when there is no previously saved state
+        if(savedInstanceState == null) {
+
+            // Retrieve list index values that were sent through an intent; use them to display the desired Android-Me body part image
+            // Use setListindex(int index) to set the list index for all BodyPartFragments
+
+            // Create a new head BodyPartFragment
             BodyPartFragment headFragment = new BodyPartFragment();
 
+            // Set the list of image id's for the head fragment and set the position to the second image in the list
             headFragment.setImageIds(AndroidImageAssets.getHeads());
+
+            // Get the correct index to access in the array of head images from the intent
+            // Set the default value to 0
             int headIndex = getIntent().getIntExtra("headIndex", 0);
             headFragment.setListIndex(headIndex);
 
+            // Add the fragment to its container using a FragmentManager and a Transaction
             FragmentManager fragmentManager = getSupportFragmentManager();
 
             fragmentManager.beginTransaction()
                     .add(R.id.head_container, headFragment)
                     .commit();
+
+            // Create and display the body and leg BodyPartFragments
 
             BodyPartFragment bodyFragment = new BodyPartFragment();
             bodyFragment.setImageIds(AndroidImageAssets.getBodies());

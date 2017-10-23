@@ -16,7 +16,7 @@
 
 package com.geekathlon.shailshah.androidcreator.data;
 
-import com.example.android.android_me.R;
+import com.geekathlon.shailshah.androidcreator.R;
 
 import java.util.ArrayList;
 import java.util.List;

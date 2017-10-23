@@ -14,29 +14,41 @@ import java.util.List;
 
 public class MasterListAdapter extends BaseAdapter {
 
+    // Keeps track of the context and list of images to display
     private Context mContext;
     private List<Integer> mImageIds;
+
+    /**
+     * Constructor method
+     * @param imageIds The list of images to display
+     */
     public MasterListAdapter(Context context, List<Integer> imageIds) {
         mContext = context;
         mImageIds = imageIds;
     }
+
+    /**
+     * Returns the number of items the adapter will display
+     */
     @Override
     public int getCount() {
-        return 0;
+        return mImageIds.size();
     }
 
     @Override
-    public Object getItem(int position) {
+    public Object getItem(int i) {
         return null;
     }
 
     @Override
-    public long getItemId(int position) {
+    public long getItemId(int i) {
         return 0;
     }
 
-    @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    /**
+     * Creates a new ImageView for each item referenced by the adapter
+     */
+    public View getView(final int position, View convertView, ViewGroup parent) {
         ImageView imageView;
         if (convertView == null) {
             // If the view is not recycled, this creates a new ImageView to hold an image
@@ -53,4 +65,5 @@ public class MasterListAdapter extends BaseAdapter {
         imageView.setImageResource(mImageIds.get(position));
         return imageView;
     }
+
 }
