@@ -4,4 +4,16 @@ This App also supports tablet layout.
 
 
 # Screenshots
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+Phone Layout 
+
+![alt text](https://github.com/shahshail/AndroidCreate/blob/master/app/Screenshot_1508792823.png)
+
+
+![alt text](https://github.com/shahshail/AndroidCreate/blob/master/app/Screenshot_1508792828.png)
+
+
+Tablet Layout : 
+![alt text](https://github.com/shahshail/AndroidCreate/blob/master/app/Screenshot_1508793974.png)
+
+
+
